@@ -1,0 +1,14 @@
+txn_id,issue_type,transaction_amount,settled_amount,difference,explanation
+TXN037,NEXT_MONTH_SETTLEMENT,9355.27,9355.27,0.0,Txn on 2026-03-30 settled on 2026-04-01 (crosses month boundary)
+TXN038,ROUNDING_DIFFERENCE,13224.88,13224.89,0.01,Amount diff of ₹0.01 — likely floating-point/rounding error
+TXN039,ROUNDING_DIFFERENCE,14759.41,14759.42,0.01,Amount diff of ₹0.01 — likely floating-point/rounding error
+TXN900,ORPHAN_REFUND,,-7379.12,-7379.12,Refund of ₹7379.12 on 2026-03-21 has no matching original transaction
+TXN901,ORPHAN_REFUND,,-1475.25,-1475.25,Refund of ₹1475.25 on 2026-03-06 has no matching original transaction
+TXN042,FAILED_TXN_SETTLED,12457.29,12457.29,0.0,Platform status=FAILED but bank settled ₹12457.29 on 2026-03-15
+TXN043,FAILED_TXN_SETTLED,11144.34,11144.34,0.0,Platform status=FAILED but bank settled ₹11144.34 on 2026-03-07
+TXN044,LARGE_AMOUNT_MISMATCH,636.82,492.8,-144.02,"Settlement is 22.6% off — expected ₹636.82, got ₹492.80"
+TXN045,LARGE_AMOUNT_MISMATCH,13494.82,11595.08,-1899.74,"Settlement is 14.1% off — expected ₹13494.82, got ₹11595.08"
+TXN046,MISSING_SETTLEMENT,11723.73,,-11723.73,Transaction ₹11723.73 on 2026-03-12 has no bank settlement
+TXN047,MISSING_SETTLEMENT,14645.47,,-14645.47,Transaction ₹14645.47 on 2026-03-06 has no bank settlement
+TXN048,CURRENCY_CONVERSION_ERROR,39150.64,37509.6,-1641.04,USD txn converted at implied rate 80.00 instead of 83.5 — underpaid by ₹1641.04
+TXN049,CURRENCY_CONVERSION_ERROR,36947.08,35398.4,-1548.68,USD txn converted at implied rate 80.00 instead of 83.5 — underpaid by ₹1548.68

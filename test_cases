@@ -1,0 +1,35 @@
+*Test Cases
+1 Next Month Settlement
+Txn: March 30
+Settlement: April 1
+Expected: Detected
+
+
+2 Rounding Difference
+Txn: ₹100.33
+Settlement: ₹100.34
+Expected: Detected
+
+3 Duplicate Settlement
+Same txn_id appears twice
+Expected: Detected
+
+4 Orphan Refund
+Refund with no txn
+Expected: Detected
+
+5 Failed but Settled
+Status = FAILED but settlement exists
+Expected: Detected
+
+6 Large Mismatch
+20% lower settlement
+Expected: Detected
+
+7 Missing Settlement
+SUCCESS txn, no settlement
+Expected: Detected
+
+8 Currency Conversion Error
+Wrong FX rate
+Expected: Detected
